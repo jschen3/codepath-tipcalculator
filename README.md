@@ -27,8 +27,9 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://imgur.com/a/QNryd' title='Video Walkthrough' width='' alt='Video Walkthrough' />
-
+<img src='http://i.imgur.com/OWZxG9d.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+- [ ] List anything else that you can get done to improve the app functionality!
+ * I wanted to enable the change theme button but I didn't get a chance.
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
