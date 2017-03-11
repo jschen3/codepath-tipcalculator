@@ -44,17 +44,27 @@ class ViewController: UIViewController {
         totalLabel.text = String(format: "$%.2f", total)
         let index:Double = Double(segmentedControl.selectedSegmentIndex)
         splitLabel.text = String(format: "$%.2f", total/(index+1))
+        let defaults = UserDefaults.standard
+        defaults.set(bill, forKey:"bill")
+        defaults.set(tipPercentage, forKey:"default_tip");
+        defaults.synchronize()
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        let defaults = Foundation.UserDefaults.standard
-        let tipValue = defaults.integer(forKey:"default_tip")
-        tipSlider.value = Float(tipValue)
-        tipValueLabel.text = String(format: "%.0f", tipValue)
+       
 
     }
     override func viewDidAppear(_ animated: Bool){
         super.viewWillAppear(animated)
+        let defaults = UserDefaults.standard
+        var tipValue = defaults.integer(forKey:"default_tip")
+        if tipValue == 0 {
+            tipValue = 20
+        }
+        tipSlider.value = Float(tipValue)
+        tipValueLabel.text = String(format: "%.0f", tipValue)
+        let bill = defaults.double(forKey:"bill")
+        billField.text=String(bill);
 
     }
     

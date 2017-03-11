@@ -39,6 +39,10 @@ class SettingsViewController: UIViewController {
         print("default_tip: " + defaults.string(forKey: "default_tip")!)
         defaults.synchronize()
     }
-    
+    override func viewDidAppear(_ animated: Bool){
+        super.viewWillAppear(animated)
+                
+    }
+
 
 }

@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -128,7 +127,7 @@
                     <navigationItem key="navigationItem" title="Tip Calculator" id="mQe-X2-Xt9">
                         <barButtonItem key="rightBarButtonItem" title="Settings" id="FDi-8Z-gRL">
                             <connections>
-                                <segue destination="qs1-ky-5dI" kind="show" id="FA7-kh-IaE"/>
+                                <segue destination="v6w-yQ-829" kind="show" id="ELl-Aw-dKs"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -205,13 +204,7 @@
                             <outletCollection property="gestureRecognizers" destination="QPp-Dd-zjp" appends="YES" id="C4x-3v-I15"/>
                         </connections>
                     </view>
-                    <navigationItem key="navigationItem" title="Settings" id="Hq2-4l-eDp">
-                        <barButtonItem key="leftBarButtonItem" title="Back" id="786-jL-RRn">
-                            <connections>
-                                <segue destination="BYZ-38-t0r" kind="show" id="AkS-Vp-7zf"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Settings" id="Hq2-4l-eDp"/>
                     <connections>
                         <outlet property="colorThemeSwitch" destination="ahA-uq-yY7" id="71A-K6-y7l"/>
                         <outlet property="defaultTipField" destination="RY8-hc-gkF" id="Poy-IP-Stj"/>
@@ -224,7 +217,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2751.1999999999998" y="123.68815592203899"/>
+            <point key="canvasLocation" x="1882" y="124"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="253-PT-Yf2">
@@ -244,26 +237,5 @@
             </objects>
             <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="uvd-1O-ko6">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qs1-ky-5dI" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Oed-fr-RBe">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="v6w-yQ-829" kind="relationship" relationship="rootViewController" id="NYI-5w-ZOj"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="T2s-0e-zf7" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1812" y="123.68815592203899"/>
-        </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="AkS-Vp-7zf"/>
-    </inferredMetricsTieBreakers>
 </document>
